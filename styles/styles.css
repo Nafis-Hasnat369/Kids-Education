@@ -2,16 +2,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 .quicksand-font {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Shared styles */
+/* colors*/
+.primary {
+    color: orange;
+}
 
+.secondary {
+    color: skyblue;
+}
+
+.tertiary {
+    color: #05D4DF;
+}
+
+.quaternary {
+    color: #5D58EF;
+}
+
+.gray {
+    color: #808080;
+}
+
+/* Display styles */
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Font weight */
+.bold {
+    font-weight: bold;
+}
+
+/* button styles */
+.btn-primary {
+    color: white;
+    background-color: orange;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 50px;
+    border-radius: 12px;
+}
+
+/* Header styles */
 /* Navbar styles */
+.navbar {
+    justify-content: space-around;
+}
 
+.brand-name {
+    font-size: 32px;
+}
 
+.nav-item {
+    list-style: none;
+    margin-right: 32px;
+    font-size: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
 
 /* Responsive media queries */
+
+/* Mobile devices */
+@media screen and (max-width:576px) {
+
+    .brand-name,
+    .nav-links,
+    .btn-primary {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .bar {
+        display: block;
+        width: 30px;
+    }
+
+    .hr-nav {
+        display: block;
+        background-color: orange;
+        width: 100%;
+    }
+}
