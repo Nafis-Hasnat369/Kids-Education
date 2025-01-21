@@ -175,7 +175,26 @@
     padding: 32px;
 }
 
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.arrow{
+    color: white;
+    background-color: orange;
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 /* Responsive media queries */
 
@@ -254,5 +273,7 @@
     .card-item>h4 {
         font-size: 16px;
     }
-
+    .toggle {
+        display: none;
+    }
 }
