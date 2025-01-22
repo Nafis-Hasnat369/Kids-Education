@@ -136,6 +136,9 @@
     max-width: 1440px;
     margin: 60px auto;
     background-image: url("./../assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
 }
 
@@ -199,7 +202,7 @@
 /* Stories styles */
 .stories {
     max-width: 1440px;
-    margin: 0px auto;
+    margin: 140px auto;
     background:
         linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(254, 163, 1, 0.3)),
         url("./../assets/bg.png");
@@ -212,13 +215,41 @@
 .story-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    padding: 80px;
 }
 
 .story1 {
+    width: 540px;
     background-color: white;
     color: black;
     border-radius: 16px;
+    text-align: left;
+}
+
+.story1-img {
+    border-radius: 16px 16px 0 0;
+}
+
+.btn-story1 {
+    background: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16;
+    background-color: #3CD8E8;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 48px;
+    position: relative;
+    right: -38px;
+    top: -25px;
+}
+
+.story1-title {
+    padding: 30px;
+}
+
+.story1 p {
+    padding: 30px;
 }
 
 .inside-s {
@@ -230,6 +261,48 @@
 .story {
     background-color: white;
     color: black;
+    border-radius: 16px;
+}
+
+.story img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.btn-story {
+    background: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #95B226;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 48px;
+    position: relative;
+    right: 20px;
+    top: -25px;
+}
+
+.btn-story3 {
+    background: none;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #5D58F0;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 48px;
+    position: relative;
+    right: 20px;
+    top: -25px;
+}
+
+.story-title {
+    padding: 10px;
+}
+
+.view-all {
+    margin: 60px 0;
 }
 
 /* Responsive media queries */
@@ -312,5 +385,30 @@
 
     .toggle {
         display: none;
+    }
+
+    /* story section */
+    .story1 {
+        display: none;
+    }
+
+    .story-cards {
+        padding: 10px;
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .story {
+        font-size: 9px;
+    }
+
+    .btn-story,
+    .btn-story3 {
+        font-size: 9px;
+        padding: 5px 10px;
+        top: -17px;
+    }
+    .view-all {
+        font-size: 16px;
+        margin: 40px 0;
     }
 }
