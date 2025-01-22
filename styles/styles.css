@@ -202,7 +202,7 @@
 /* Stories styles */
 .stories {
     max-width: 1440px;
-    margin: 140px auto;
+    margin: 0 auto;
     background:
         linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(254, 163, 1, 0.3)),
         url("./../assets/bg.png");
@@ -305,6 +305,76 @@
     margin: 60px 0;
 }
 
+
+/* Footer styles */
+.footer {
+    max-width: 1440px;
+    background-color: #01ACFD;
+    color: white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-content: center;
+}
+
+.footer-1 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-left: 100px;
+    margin-top: 120px;
+}
+
+.footer-1 p {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.footer-1 img {
+    height: 82px;
+}
+
+.footer-1 div {
+    display: inline-block;
+}
+
+.footer-2 {
+    margin-top: 120px;
+}
+
+.footer-2 h4 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 33px;
+    margin-bottom: 32px;
+}
+
+.footer-2 li {
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-3 h4 {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 32px;
+}
+
+.footer-3 {
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+
+.marquee {
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 /* Responsive media queries */
 
 /* Mobile devices */
@@ -405,10 +475,39 @@
     .btn-story3 {
         font-size: 9px;
         padding: 5px 10px;
-        top: -17px;
+        top: -14px;
     }
+
     .view-all {
         font-size: 16px;
         margin: 40px 0;
+    }
+
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+    }
+
+    .footer-1 {
+        margin: 0;
+        padding: 8px;
+    }
+
+    .footer-2 {
+        margin-top: 0;
+    }
+
+    .footer-2 h4 {
+        margin-left: 16px;
+    }
+
+    .footer-2 ul {
+        padding: 16px;
+    }
+
+    .footer-3 {
+        margin-top: 0;
+        padding: 16px;
+        margin-bottom: 50px;
     }
 }
